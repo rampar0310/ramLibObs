@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB69661026D7296D001E7CCF /* MyObsLib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB69660F26D7296D001E7CCF /* MyObsLib.hpp */; };
+		BB69661226D7296D001E7CCF /* MyObsLibPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB69661126D7296D001E7CCF /* MyObsLibPriv.hpp */; };
+		BB69661426D7296D001E7CCF /* MyObsLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB69661326D7296D001E7CCF /* MyObsLib.cpp */; };
+		BB69663C26D8219B001E7CCF /* my_output.c in Sources */ = {isa = PBXBuildFile; fileRef = BB69663326D8219B001E7CCF /* my_output.c */; };
+		BB69663D26D8219B001E7CCF /* my_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = BB69663426D8219B001E7CCF /* my_encoder.c */; };
+		BB69663E26D8219B001E7CCF /* my_service.h in Headers */ = {isa = PBXBuildFile; fileRef = BB69663526D8219B001E7CCF /* my_service.h */; };
+		BB69663F26D8219B001E7CCF /* my_service.c in Sources */ = {isa = PBXBuildFile; fileRef = BB69663626D8219B001E7CCF /* my_service.c */; };
+		BB69664026D8219B001E7CCF /* my_source.c in Sources */ = {isa = PBXBuildFile; fileRef = BB69663726D8219B001E7CCF /* my_source.c */; };
+		BB69664126D8219B001E7CCF /* my_source.h in Headers */ = {isa = PBXBuildFile; fileRef = BB69663826D8219B001E7CCF /* my_source.h */; };
+		BB69664226D8219B001E7CCF /* my_encoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BB69663926D8219B001E7CCF /* my_encoder.h */; };
+		BB69664326D8219B001E7CCF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB69663A26D8219B001E7CCF /* main.cpp */; };
+		BB69664426D8219B001E7CCF /* my_output.h in Headers */ = {isa = PBXBuildFile; fileRef = BB69663B26D8219B001E7CCF /* my_output.h */; };
+		BB69666426D82866001E7CCF /* mac-vth264.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69664D26D82866001E7CCF /* mac-vth264.so */; };
+		BB69666526D82866001E7CCF /* text-freetype2.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69664E26D82866001E7CCF /* text-freetype2.so */; };
+		BB69666626D82866001E7CCF /* image-source.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69664F26D82866001E7CCF /* image-source.so */; };
+		BB69666726D82866001E7CCF /* obslua.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665026D82866001E7CCF /* obslua.so */; };
+		BB69666826D82866001E7CCF /* mac-avcapture.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665126D82866001E7CCF /* mac-avcapture.so */; };
+		BB69666926D82866001E7CCF /* obs-ffmpeg.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665226D82866001E7CCF /* obs-ffmpeg.so */; };
+		BB69666A26D82866001E7CCF /* libobs-opengl.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665326D82866001E7CCF /* libobs-opengl.so */; };
+		BB69666B26D82866001E7CCF /* obs-outputs.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665426D82866001E7CCF /* obs-outputs.so */; };
+		BB69666C26D82867001E7CCF /* vlc-video.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665526D82866001E7CCF /* vlc-video.so */; };
+		BB69666D26D82867001E7CCF /* decklink-captions.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665626D82866001E7CCF /* decklink-captions.so */; };
+		BB69666E26D82867001E7CCF /* obs-browser.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665726D82866001E7CCF /* obs-browser.so */; };
+		BB69666F26D82867001E7CCF /* decklink-ouput-ui.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665826D82866001E7CCF /* decklink-ouput-ui.so */; };
+		BB69667026D82867001E7CCF /* rtmp-services.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665926D82866001E7CCF /* rtmp-services.so */; };
+		BB69667126D82867001E7CCF /* obs-x264.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665A26D82866001E7CCF /* obs-x264.so */; };
+		BB69667226D82867001E7CCF /* obs-vst.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665B26D82866001E7CCF /* obs-vst.so */; };
+		BB69667326D82867001E7CCF /* mac-syphon.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665C26D82866001E7CCF /* mac-syphon.so */; };
+		BB69667426D82867001E7CCF /* frontend-tools.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665D26D82866001E7CCF /* frontend-tools.so */; };
+		BB69667526D82867001E7CCF /* obs-filters.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665E26D82866001E7CCF /* obs-filters.so */; };
+		BB69667626D82867001E7CCF /* obs-transitions.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69665F26D82866001E7CCF /* obs-transitions.so */; };
+		BB69667726D82867001E7CCF /* mac-decklink.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69666026D82866001E7CCF /* mac-decklink.so */; };
+		BB69667826D82867001E7CCF /* mac-capture.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69666126D82866001E7CCF /* mac-capture.so */; };
+		BB69667926D82867001E7CCF /* coreaudio-encoder.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69666226D82866001E7CCF /* coreaudio-encoder.so */; };
+		BB69667A26D82867001E7CCF /* mac-virtualcam.so in Frameworks */ = {isa = PBXBuildFile; fileRef = BB69666326D82866001E7CCF /* mac-virtualcam.so */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB69660C26D7296D001E7CCF /* libMyObsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMyObsLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB69660F26D7296D001E7CCF /* MyObsLib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyObsLib.hpp; sourceTree = "<group>"; };
+		BB69661126D7296D001E7CCF /* MyObsLibPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyObsLibPriv.hpp; sourceTree = "<group>"; };
+		BB69661326D7296D001E7CCF /* MyObsLib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyObsLib.cpp; sourceTree = "<group>"; };
+		BB69663326D8219B001E7CCF /* my_output.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = my_output.c; sourceTree = "<group>"; };
+		BB69663426D8219B001E7CCF /* my_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = my_encoder.c; sourceTree = "<group>"; };
+		BB69663526D8219B001E7CCF /* my_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_service.h; sourceTree = "<group>"; };
+		BB69663626D8219B001E7CCF /* my_service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = my_service.c; sourceTree = "<group>"; };
+		BB69663726D8219B001E7CCF /* my_source.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = my_source.c; sourceTree = "<group>"; };
+		BB69663826D8219B001E7CCF /* my_source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_source.h; sourceTree = "<group>"; };
+		BB69663926D8219B001E7CCF /* my_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_encoder.h; sourceTree = "<group>"; };
+		BB69663A26D8219B001E7CCF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BB69663B26D8219B001E7CCF /* my_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_output.h; sourceTree = "<group>"; };
+		BB69664D26D82866001E7CCF /* mac-vth264.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "mac-vth264.so"; path = "../obs-studio/AllLibraries/mac-vth264.so"; sourceTree = "<group>"; };
+		BB69664E26D82866001E7CCF /* text-freetype2.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "text-freetype2.so"; path = "../obs-studio/AllLibraries/text-freetype2.so"; sourceTree = "<group>"; };
+		BB69664F26D82866001E7CCF /* image-source.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "image-source.so"; path = "../obs-studio/AllLibraries/image-source.so"; sourceTree = "<group>"; };
+		BB69665026D82866001E7CCF /* obslua.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = obslua.so; path = "../obs-studio/AllLibraries/obslua.so"; sourceTree = "<group>"; };
+		BB69665126D82866001E7CCF /* mac-avcapture.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "mac-avcapture.so"; path = "../obs-studio/AllLibraries/mac-avcapture.so"; sourceTree = "<group>"; };
+		BB69665226D82866001E7CCF /* obs-ffmpeg.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "obs-ffmpeg.so"; path = "../obs-studio/AllLibraries/obs-ffmpeg.so"; sourceTree = "<group>"; };
+		BB69665326D82866001E7CCF /* libobs-opengl.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "libobs-opengl.so"; path = "../obs-studio/AllLibraries/libobs-opengl.so"; sourceTree = "<group>"; };
+		BB69665426D82866001E7CCF /* obs-outputs.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "obs-outputs.so"; path = "../obs-studio/AllLibraries/obs-outputs.so"; sourceTree = "<group>"; };
+		BB69665526D82866001E7CCF /* vlc-video.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "vlc-video.so"; path = "../obs-studio/AllLibraries/vlc-video.so"; sourceTree = "<group>"; };
+		BB69665626D82866001E7CCF /* decklink-captions.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "decklink-captions.so"; path = "../obs-studio/AllLibraries/decklink-captions.so"; sourceTree = "<group>"; };
+		BB69665726D82866001E7CCF /* obs-browser.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "obs-browser.so"; path = "../obs-studio/AllLibraries/obs-browser.so"; sourceTree = "<group>"; };
+		BB69665826D82866001E7CCF /* decklink-ouput-ui.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "decklink-ouput-ui.so"; path = "../obs-studio/AllLibraries/decklink-ouput-ui.so"; sourceTree = "<group>"; };
+		BB69665926D82866001E7CCF /* rtmp-services.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "rtmp-services.so"; path = "../obs-studio/AllLibraries/rtmp-services.so"; sourceTree = "<group>"; };
+		BB69665A26D82866001E7CCF /* obs-x264.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "obs-x264.so"; path = "../obs-studio/AllLibraries/obs-x264.so"; sourceTree = "<group>"; };
+		BB69665B26D82866001E7CCF /* obs-vst.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "obs-vst.so"; path = "../obs-studio/AllLibraries/obs-vst.so"; sourceTree = "<group>"; };
+		BB69665C26D82866001E7CCF /* mac-syphon.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "mac-syphon.so"; path = "../obs-studio/AllLibraries/mac-syphon.so"; sourceTree = "<group>"; };
+		BB69665D26D82866001E7CCF /* frontend-tools.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "frontend-tools.so"; path = "../obs-studio/AllLibraries/frontend-tools.so"; sourceTree = "<group>"; };
+		BB69665E26D82866001E7CCF /* obs-filters.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "obs-filters.so"; path = "../obs-studio/AllLibraries/obs-filters.so"; sourceTree = "<group>"; };
+		BB69665F26D82866001E7CCF /* obs-transitions.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "obs-transitions.so"; path = "../obs-studio/AllLibraries/obs-transitions.so"; sourceTree = "<group>"; };
+		BB69666026D82866001E7CCF /* mac-decklink.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "mac-decklink.so"; path = "../obs-studio/AllLibraries/mac-decklink.so"; sourceTree = "<group>"; };
+		BB69666126D82866001E7CCF /* mac-capture.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "mac-capture.so"; path = "../obs-studio/AllLibraries/mac-capture.so"; sourceTree = "<group>"; };
+		BB69666226D82866001E7CCF /* coreaudio-encoder.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "coreaudio-encoder.so"; path = "../obs-studio/AllLibraries/coreaudio-encoder.so"; sourceTree = "<group>"; };
+		BB69666326D82866001E7CCF /* mac-virtualcam.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; name = "mac-virtualcam.so"; path = "../obs-studio/AllLibraries/mac-virtualcam.so"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB69660A26D7296D001E7CCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB69666426D82866001E7CCF /* mac-vth264.so in Frameworks */,
+				BB69666526D82866001E7CCF /* text-freetype2.so in Frameworks */,
+				BB69666626D82866001E7CCF /* image-source.so in Frameworks */,
+				BB69666726D82866001E7CCF /* obslua.so in Frameworks */,
+				BB69666826D82866001E7CCF /* mac-avcapture.so in Frameworks */,
+				BB69666926D82866001E7CCF /* obs-ffmpeg.so in Frameworks */,
+				BB69666A26D82866001E7CCF /* libobs-opengl.so in Frameworks */,
+				BB69666B26D82866001E7CCF /* obs-outputs.so in Frameworks */,
+				BB69666C26D82867001E7CCF /* vlc-video.so in Frameworks */,
+				BB69666D26D82867001E7CCF /* decklink-captions.so in Frameworks */,
+				BB69666E26D82867001E7CCF /* obs-browser.so in Frameworks */,
+				BB69666F26D82867001E7CCF /* decklink-ouput-ui.so in Frameworks */,
+				BB69667026D82867001E7CCF /* rtmp-services.so in Frameworks */,
+				BB69667126D82867001E7CCF /* obs-x264.so in Frameworks */,
+				BB69667226D82867001E7CCF /* obs-vst.so in Frameworks */,
+				BB69667326D82867001E7CCF /* mac-syphon.so in Frameworks */,
+				BB69667426D82867001E7CCF /* frontend-tools.so in Frameworks */,
+				BB69667526D82867001E7CCF /* obs-filters.so in Frameworks */,
+				BB69667626D82867001E7CCF /* obs-transitions.so in Frameworks */,
+				BB69667726D82867001E7CCF /* mac-decklink.so in Frameworks */,
+				BB69667826D82867001E7CCF /* mac-capture.so in Frameworks */,
+				BB69667926D82867001E7CCF /* coreaudio-encoder.so in Frameworks */,
+				BB69667A26D82867001E7CCF /* mac-virtualcam.so in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB69660326D7296D001E7CCF = {
+			isa = PBXGroup;
+			children = (
+				BB69660E26D7296D001E7CCF /* MyObsLib */,
+				BB69660D26D7296D001E7CCF /* Products */,
+				BB69664C26D82866001E7CCF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB69660D26D7296D001E7CCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB69660C26D7296D001E7CCF /* libMyObsLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB69660E26D7296D001E7CCF /* MyObsLib */ = {
+			isa = PBXGroup;
+			children = (
+				BB69663A26D8219B001E7CCF /* main.cpp */,
+				BB69663426D8219B001E7CCF /* my_encoder.c */,
+				BB69663926D8219B001E7CCF /* my_encoder.h */,
+				BB69663326D8219B001E7CCF /* my_output.c */,
+				BB69663B26D8219B001E7CCF /* my_output.h */,
+				BB69663626D8219B001E7CCF /* my_service.c */,
+				BB69663526D8219B001E7CCF /* my_service.h */,
+				BB69663726D8219B001E7CCF /* my_source.c */,
+				BB69663826D8219B001E7CCF /* my_source.h */,
+				BB69660F26D7296D001E7CCF /* MyObsLib.hpp */,
+				BB69661126D7296D001E7CCF /* MyObsLibPriv.hpp */,
+				BB69661326D7296D001E7CCF /* MyObsLib.cpp */,
+			);
+			path = MyObsLib;
+			sourceTree = "<group>";
+		};
+		BB69664C26D82866001E7CCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB69666226D82866001E7CCF /* coreaudio-encoder.so */,
+				BB69665626D82866001E7CCF /* decklink-captions.so */,
+				BB69665826D82866001E7CCF /* decklink-ouput-ui.so */,
+				BB69665D26D82866001E7CCF /* frontend-tools.so */,
+				BB69664F26D82866001E7CCF /* image-source.so */,
+				BB69665326D82866001E7CCF /* libobs-opengl.so */,
+				BB69665126D82866001E7CCF /* mac-avcapture.so */,
+				BB69666126D82866001E7CCF /* mac-capture.so */,
+				BB69666026D82866001E7CCF /* mac-decklink.so */,
+				BB69665C26D82866001E7CCF /* mac-syphon.so */,
+				BB69666326D82866001E7CCF /* mac-virtualcam.so */,
+				BB69664D26D82866001E7CCF /* mac-vth264.so */,
+				BB69665726D82866001E7CCF /* obs-browser.so */,
+				BB69665226D82866001E7CCF /* obs-ffmpeg.so */,
+				BB69665E26D82866001E7CCF /* obs-filters.so */,
+				BB69665426D82866001E7CCF /* obs-outputs.so */,
+				BB69665F26D82866001E7CCF /* obs-transitions.so */,
+				BB69665B26D82866001E7CCF /* obs-vst.so */,
+				BB69665A26D82866001E7CCF /* obs-x264.so */,
+				BB69665026D82866001E7CCF /* obslua.so */,
+				BB69665926D82866001E7CCF /* rtmp-services.so */,
+				BB69664E26D82866001E7CCF /* text-freetype2.so */,
+				BB69665526D82866001E7CCF /* vlc-video.so */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BB69660826D7296D001E7CCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB69664226D8219B001E7CCF /* my_encoder.h in Headers */,
+				BB69661226D7296D001E7CCF /* MyObsLibPriv.hpp in Headers */,
+				BB69661026D7296D001E7CCF /* MyObsLib.hpp in Headers */,
+				BB69664426D8219B001E7CCF /* my_output.h in Headers */,
+				BB69663E26D8219B001E7CCF /* my_service.h in Headers */,
+				BB69664126D8219B001E7CCF /* my_source.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BB69660B26D7296D001E7CCF /* MyObsLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB69661726D7296D001E7CCF /* Build configuration list for PBXNativeTarget "MyObsLib" */;
+			buildPhases = (
+				BB69660826D7296D001E7CCF /* Headers */,
+				BB69660926D7296D001E7CCF /* Sources */,
+				BB69660A26D7296D001E7CCF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyObsLib;
+			productName = MyObsLib;
+			productReference = BB69660C26D7296D001E7CCF /* libMyObsLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB69660426D7296D001E7CCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BB69660B26D7296D001E7CCF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = BB69660726D7296D001E7CCF /* Build configuration list for PBXProject "MyObsLib" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB69660326D7296D001E7CCF;
+			productRefGroup = BB69660D26D7296D001E7CCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB69660B26D7296D001E7CCF /* MyObsLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB69660926D7296D001E7CCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB69663C26D8219B001E7CCF /* my_output.c in Sources */,
+				BB69661426D7296D001E7CCF /* MyObsLib.cpp in Sources */,
+				BB69664326D8219B001E7CCF /* main.cpp in Sources */,
+				BB69663D26D8219B001E7CCF /* my_encoder.c in Sources */,
+				BB69663F26D8219B001E7CCF /* my_service.c in Sources */,
+				BB69664026D8219B001E7CCF /* my_source.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BB69661526D7296D001E7CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/rsivaram/logitech/obs-studio/libobs";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/rsivaram/logitech/obs-studio/build/libobs/",
+					"/Users/rsivaram/logitech/obs-studio/build/soFiles",
+					"/Users/rsivaram/logitech/obs-studio/build/rundir/RelWithDebInfo/obs-plugins/**",
+					"/Users/rsivaram/logitech/obs-studio/builds/**",
+					"/Users/rsivaram/logitech/obs-studio/AllLibraries/**",
+					"/Users/rsivaram/logitech/obs-studio/AllLibraries/obs-x264.so",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "/Users/rsivaram/logitech/obs-studio/libobs/**";
+			};
+			name = Debug;
+		};
+		BB69661626D7296D001E7CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/rsivaram/logitech/obs-studio/libobs";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/rsivaram/logitech/obs-studio/build/soFiles",
+					"/Users/rsivaram/logitech/obs-studio/build/rundir/RelWithDebInfo/obs-plugins/**",
+					"/Users/rsivaram/logitech/obs-studio/builds/**",
+					"/Users/rsivaram/logitech/obs-studio/AllLibraries/**",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"/Users/rsivaram/logitech/obs-studio/build/rundir/RelWithDebInfo/obs-plugins/**",
+					"/Users/rsivaram/logitech/obs-studio/builds/**",
+					"/Users/rsivaram/logitech/obs-studio/AllLibraries/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "/Users/rsivaram/logitech/obs-studio/libobs/**";
+			};
+			name = Release;
+		};
+		BB69661826D7296D001E7CCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7E7VRRPSC;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rsivaram/logitech/obs-studio/libobs/**",
+					"/Users/rsivaram/logitech/obs-studio/plugins/obs-outputs/**",
+				);
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "/Users/rsivaram/logitech/obs-studio/libobs";
+				LIBRARY_SEARCH_PATHS = (
+					"<Multiple",
+					"values>/**",
+					"/Users/rsivaram/logitech/obs-studio/build/soFiles/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "/Users/rsivaram/logitech/obs-studio/libobs/**";
+			};
+			name = Debug;
+		};
+		BB69661926D7296D001E7CCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7E7VRRPSC;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/rsivaram/logitech/obs-studio/libobs/**",
+					"/Users/rsivaram/logitech/obs-studio/plugins/obs-outputs/**",
+				);
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "/Users/rsivaram/logitech/obs-studio/libobs";
+				LIBRARY_SEARCH_PATHS = (
+					"<Multiple",
+					"values>/**",
+					"/Users/rsivaram/logitech/obs-studio/build/soFiles/**",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "/Users/rsivaram/logitech/obs-studio/libobs/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB69660726D7296D001E7CCF /* Build configuration list for PBXProject "MyObsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB69661526D7296D001E7CCF /* Debug */,
+				BB69661626D7296D001E7CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB69661726D7296D001E7CCF /* Build configuration list for PBXNativeTarget "MyObsLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB69661826D7296D001E7CCF /* Debug */,
+				BB69661926D7296D001E7CCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB69660426D7296D001E7CCF /* Project object */;
+}
